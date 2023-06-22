@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+}
+
+.left {
+  background: url("./images/bg-pattern-desktop.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: 200px;
+}
+
+.logo {
+  height: 100px;
+}
+
+.heading {
+  width: 18%;
+  font-size: 30px;
+  letter-spacing: 18px;
+}
+
+span {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+p {
+  font-size: 16px;
+  width: 55%;
+  color: hsl(0, 36%, 70%);
+}
+.email-section {
+  height: 100%;
+  display: flex;
+}
+
+.email-bar {
+  width: 350px;
+  height: 50px;
+  border-radius: 20px;
+  padding: 20px;
+  border-color: hsl(0, 36%, 70%);
+}
+
+form button {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  padding: 10px;
+  width: 80px;
+  height: 50px;
+  border-radius: 20px;
+  margin-left: -50px;
+  border: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  p {
+    width: 300px;
+  }
+
+  .logo {
+    max-height: 40px;
+    display: flex;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
